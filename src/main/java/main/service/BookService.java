@@ -84,6 +84,21 @@ public class BookService {
         }
         return null;
     }
+    public void addBook(List<Book> books, Book newBook) {
+        if (newBook != null) {
+            books.add(newBook);
+        }
+    }
+
+    public boolean removeBookById(List<Book> books, int id) {
+        Book bookToRemove = findBookById(books, id);
+        if (bookToRemove != null) {
+            books.remove(bookToRemove);
+            return true;
+        }
+        return false;
+    }
+
     public Map<String, List<Book>> mapGenreToBooksSortedByAuthor(List<Book> books) {
         Map<String, List<Book>> genreMap = new HashMap<>();
 

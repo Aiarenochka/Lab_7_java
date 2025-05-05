@@ -1,6 +1,5 @@
-package main.main.io;
+package main.io;
 
-import main.io.View;
 import main.model.Book;
 
 import java.util.Scanner;

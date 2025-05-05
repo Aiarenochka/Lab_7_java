@@ -9,15 +9,17 @@ public class MenuPrinter {
         3. List books with min pages
         4. List books by genre (sorted by year/title)
         5. Find book by title
-        6. Find book by ID
-        7. Show books by genre sorted by author
-        8. Show number of books per publisher
-        9. Save to text file
-        10. Save to binary file
-        11. Save to JSON file
-        12. Load from text file
-        13. Load from binary file
-        14. Load from JSON file
+        6. Add a new book
+        7. Remove a book by ID
+        8. Find book by ID
+        9. Show books by genre sorted by author
+        10. Show number of books per publisher
+        11. Save to text file
+        12. Save to binary file
+        13. Save to JSON file
+        14. Load from text file
+        15. Load from binary file
+        16. Load from JSON file
         0. Exit
         Choose an option: >>\s""");
     }
