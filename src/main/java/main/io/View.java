@@ -30,4 +30,10 @@ public class View {
     public void prompt(String message) {
         System.out.print(message);
     }
+
+    public void showAllBooks(List<Book> books) {
+        System.out.println("All books in catalog:");
+        showBooks(books);
+    }
+
 }

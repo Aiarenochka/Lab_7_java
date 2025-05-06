@@ -81,6 +81,12 @@ public class BookController {
                 }
 
                 case 8 -> {
+                    assert initialBooks != null;
+                    view.showAllBooks(initialBooks);
+                }
+
+
+                case 9 -> {
                     view.prompt("Enter book ID: ");
                     assert initialBooks != null;
                     Book foundBook = service.findBookById(initialBooks, scanner.nextInt());
@@ -91,7 +97,7 @@ public class BookController {
                         view.showBookNotFound();
                     }
                 }
-                case 9 -> {
+                case 10 -> {
                     view.prompt("Enter genre: ");
                     String genreInput = scanner.nextLine();
                     assert initialBooks != null;
@@ -104,7 +110,7 @@ public class BookController {
                         view.prompt("No books found for genre: " + genreInput + "\n");
                     }
                 }
-                case 10 -> {
+                case 11 -> {
                     view.prompt("Enter publisher: ");
                     String publisherInput = scanner.nextLine();
                     assert initialBooks != null;
@@ -117,22 +123,22 @@ public class BookController {
                         view.prompt("No books found for publisher: " + publisherInput + "\n");
                     }
                 }
-                case 11 -> {
+                case 12 -> {
                     view.prompt("Enter text filename: ");
                     textRepo.saveToFile(initialBooks, scanner.nextLine());
                     view.prompt("Books saved successfully!\n");
                 }
-                case 12 -> {
+                case 13 -> {
                     view.prompt("Enter binary filename: ");
                     binaryRepo.saveToFile(initialBooks, scanner.nextLine());
                     view.prompt("Books saved successfully!\n");
                 }
-                case 13 -> {
+                case 14 -> {
                     view.prompt("Enter JSON filename: ");
                     jsonRepo.saveToFile(initialBooks, scanner.nextLine());
                     view.prompt("Books saved successfully!\n");
                 }
-                case 14 -> {
+                case 15 -> {
                     view.prompt("Load from text file: ");
                     initialBooks = textRepo.loadFromFile(scanner.nextLine());
                     if (initialBooks != null ) {
@@ -142,7 +148,7 @@ public class BookController {
                         view.prompt("Books loaded failed!\n");
                     }
                 }
-                case 15 -> {
+                case 16 -> {
                     view.prompt("Load from binary file: ");
                     initialBooks = binaryRepo.loadFromFile(scanner.nextLine());
                     if (initialBooks != null) {
@@ -152,7 +158,7 @@ public class BookController {
                         view.prompt("Books loaded failed!\n");
                     }
                 }
-                case 16 -> {
+                case 17 -> {
                     view.prompt("Load from JSON file: ");
                     initialBooks = jsonRepo.loadFromFile(scanner.nextLine());
                     if (initialBooks != null) {

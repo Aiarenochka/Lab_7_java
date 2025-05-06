@@ -11,15 +11,16 @@ public class MenuPrinter {
         5. Find book by title
         6. Add a new book
         7. Remove a book by ID
-        8. Find book by ID
-        9. Show books by genre sorted by author
-        10. Show number of books per publisher
-        11. Save to text file
-        12. Save to binary file
-        13. Save to JSON file
-        14. Load from text file
-        15. Load from binary file
-        16. Load from JSON file
+        8. Show all books
+        9. Find book by ID
+        10. Show books by genre sorted by author
+        11. Show number of books per publisher
+        12. Save to text file
+        13. Save to binary file
+        14. Save to JSON file
+        15. Load from text file
+        16. Load from binary file
+        17. Load from JSON file
         0. Exit
         Choose an option: >>\s""");
     }
